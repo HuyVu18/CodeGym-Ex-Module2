@@ -9,22 +9,10 @@ public class DayOfMonth {
         int m = input.nextInt();
 
         switch (m) {
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 10:
-            case 12:
-                System.out.println("Thang nay co 31 ngay.");
-                break;
-
-            case 2:
-                System.out.println("Thang nay co 28 hoac 29 ngay.");
-                break;
-
-            default:
-                System.out.println("Thang nay co 30 ngay.");
+            case 1, 3, 5, 7, 8, 10, 12 -> System.out.println("Thang nay co 31 ngay.");
+            case 2 -> System.out.println("Thang nay co 28 hoac 29 ngay.");
+            case 4, 6, 9, 11 -> System.out.println("Thang nay co 30 ngay.");
+            default -> System.out.println("Thang trong nam tu 1 - 12");
         }
     }
 }
