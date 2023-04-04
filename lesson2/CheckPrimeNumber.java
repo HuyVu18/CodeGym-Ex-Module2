@@ -9,7 +9,7 @@ public class CheckPrimeNumber {
         int num = input.nextInt();
         boolean check = true;
 
-        if (num % 1 == 0 && num > 0) {
+        if (num > 0) {
             for (int i = 2; i <= Math.sqrt(num); i++) {
                 if (num % i == 0) {
                     check = false;
