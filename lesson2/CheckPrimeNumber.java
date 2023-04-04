@@ -7,11 +7,10 @@ public class CheckPrimeNumber {
         Scanner input = new Scanner(System.in);
         System.out.println("Nhap so can kiem tra");
         int num = input.nextInt();
-        double num2 = Math.sqrt(num);
         boolean check = true;
 
         if (num % 1 == 0 && num > 0) {
-            for (int i = 2; i <= num2; i++) {
+            for (int i = 2; i <= Math.sqrt(num); i++) {
                 if (num % i == 0) {
                     check = false;
                     break;
