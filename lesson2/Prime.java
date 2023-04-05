@@ -1,6 +1,9 @@
 package lesson2;
 
+import java.util.Scanner;
+
 public class Prime {
+
 //    public static void main(String[] args) {
 //        Scanner input = new Scanner(System.in);
 //        int num = input.nextInt();
