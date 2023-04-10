@@ -1,4 +1,4 @@
-package lesson4.StopWatch;
+package lesson4.stopWatch;
 
 import java.util.Date;
 
