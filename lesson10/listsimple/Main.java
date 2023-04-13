@@ -1,4 +1,4 @@
-package lesson10.testsimple;
+package lesson10.listsimple;
 
 public class Main {
     public static void main(String[] args) {
