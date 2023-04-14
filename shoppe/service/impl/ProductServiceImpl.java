@@ -6,18 +6,15 @@ import shoppe.service.CategoryService;
 import java.util.ArrayList;
 
 public class ProductServiceImpl implements CategoryService {
-    ArrayList<Product> products = new ArrayList<>();
+    private static ArrayList<Product> products = new ArrayList<>();
 
-    @Override
-    public void add() {
+    public static void add() {
         products.add(new Product("1", "1","Shirt", 200));
         products.add(new Product("1", "2", "Coat", 500));
         products.add(new Product("1", "3", "Jean", 300));
     }
 
-
-    @Override
-    public void getAll() {
+    public static void getAll() {
         for (Product element : products) {
             System.out.println(element);
         }

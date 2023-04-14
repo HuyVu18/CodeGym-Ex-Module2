@@ -5,22 +5,25 @@ import shoppe.service.CategoryService;
 import java.util.ArrayList;
 
 public class CategoryServiceImpl implements CategoryService {
-    private ArrayList<Category> categoris = new ArrayList<>();
+    private static ArrayList<Category> categories = new ArrayList<>();
 
-    @Override
-    public void add() {
-        categoris.add(new Category("1", "Men fashion", "img1"));
-        categoris.add(new Category("2", "Women fashion", "img2"));
-        categoris.add(new Category("3", "Baby fashion", "img3"));
-
+    public static void add() {
+        categories.add(new Category("1", "Men fashion", "img1"));
+        categories.add(new Category("2", "Women fashion", "img2"));
+        categories.add(new Category("3", "Baby fashion", "img3"));
     }
 
-    @Override
-    public void getAll() {
-        for (Category element : categoris) {
+    public static void getAll() {
+        for (Category element : categories) {
             System.out.println(element);
         }
     }
 
+    public static ArrayList<Category> getCategories() {
+        return categories;
+    }
 
+    public static void setCategories(ArrayList<Category> categories) {
+        CategoryServiceImpl.categories = categories;
+    }
 }
