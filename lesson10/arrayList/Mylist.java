@@ -83,4 +83,12 @@ public class Mylist<E> {
         elements = new Object[DEFAULT_CAPACITY];
         size = 0;
     }
+
+    @Override
+    public String toString() {
+        return "Mylist{" +
+                "size=" + size +
+                ", elements=" + Arrays.toString(elements) +
+                '}';
+    }
 }

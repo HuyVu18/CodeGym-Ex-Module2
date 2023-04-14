@@ -11,5 +11,10 @@ public class Main {
         System.out.println(intList.get(2));
         System.out.println(intList.getSize());
 
+        intList.remove(0);
+        System.out.println(intList);
+
+        intList.clear();
+        System.out.println(intList);
     }
 }
