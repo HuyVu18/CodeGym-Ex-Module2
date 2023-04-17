@@ -1,6 +1,6 @@
 package lesson11.stackusell;
 
-public class GenericStackClient {
+public class Main {
     private static void stackOfStrings() {
         MyGenericStack<String> stack = new MyGenericStack<>();
         stack.push("Five");
@@ -28,7 +28,7 @@ public class GenericStackClient {
         while (!stack.isEmpty()) {
             System.out.printf(" %d", stack.pop());
         }
-        System.out.println("\n3.3 Size of stack after pop operations : " + stack.size());
+        System.out.println("\n2.3 Size of stack after pop operations : " + stack.size());
     }
 
     public static void main(String[] args) {
