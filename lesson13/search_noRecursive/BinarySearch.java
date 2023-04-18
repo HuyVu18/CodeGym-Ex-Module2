@@ -7,9 +7,9 @@ public class BinarySearch {
     Scanner sc = new Scanner(System.in);
     private static final int notFound = -1;
 
-    static int search(int key) {
+    public static int search(int key) {
         int left = 0;
-        int right = list.length;
+        int right = list.length -1;
         while (left <= right) {
             int mid = (left + right) / 2;
             if (key == list[mid])

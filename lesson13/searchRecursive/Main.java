@@ -8,8 +8,8 @@ public class Main {
 
         System.out.println("Search:");
         int key = sc.nextInt();
-        int search1 = BinarySearch.search(0, BinarySearch.list.length, key);
-        if (search1 != -1) {
+        int search1 = BinarySearch.search(0, BinarySearch.list.length - 1, key);
+        if (search1 != BinarySearch.notFound) {
             System.out.println("Element " + BinarySearch.list[search1] + " in Array and index " + search1);
         } else {
             System.out.println("Not Found!");
