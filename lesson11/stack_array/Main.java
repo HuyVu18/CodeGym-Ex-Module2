@@ -1,4 +1,4 @@
-package lesson12.stack_array;
+package lesson11.stack_array;
 
 public class Main {
     public static void main(String[] args) throws Exception {

@@ -1,4 +1,4 @@
-package lesson12.queue_array;
+package lesson11.queue_array;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package lesson12.queue;
+package lesson11.queue;
 
 public class Solution {
 }

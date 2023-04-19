@@ -1,4 +1,4 @@
-package lesson12.reverseStack;
+package lesson11.reverseStack;
 
 import java.util.Scanner;
 import java.util.Stack;

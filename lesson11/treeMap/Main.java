@@ -1,4 +1,4 @@
-package lesson12.treeMap;
+package lesson11.treeMap;
 
 import java.util.Scanner;
 import java.util.TreeMap;
