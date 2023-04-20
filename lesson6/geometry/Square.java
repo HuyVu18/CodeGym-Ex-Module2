@@ -1,8 +1,9 @@
 package lesson6.geometry;
 
+import lesson7.colorable.Colorable;
 import lesson7.resizeable.Resizeable;
 
-public class Square extends Rectangle implements Resizeable {
+public class Square extends Rectangle implements Resizeable, Colorable {
     public Square() {
     }
 
@@ -44,5 +45,10 @@ public class Square extends Rectangle implements Resizeable {
     @Override
     public double resize() {
         return getPerimeter() * 2;
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides!");
     }
 }
