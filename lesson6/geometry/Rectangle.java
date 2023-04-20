@@ -1,6 +1,8 @@
 package lesson6.geometry;
 
-public class Rectangle extends Shape{
+import lesson7.resizeable.Resizeable;
+
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double height = 1.0;
 
@@ -50,5 +52,10 @@ public class Rectangle extends Shape{
                 + getHeight()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public double resize() {
+        return getPerimeter() * 2;
     }
 }

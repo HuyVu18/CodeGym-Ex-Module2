@@ -1,6 +1,8 @@
 package lesson6.geometry;
 
-public class Square extends Rectangle {
+import lesson7.resizeable.Resizeable;
+
+public class Square extends Rectangle implements Resizeable {
     public Square() {
     }
 
@@ -37,5 +39,10 @@ public class Square extends Rectangle {
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public double resize() {
+        return getPerimeter() * 2;
     }
 }
