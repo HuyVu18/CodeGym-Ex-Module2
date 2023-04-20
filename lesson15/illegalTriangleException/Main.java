@@ -14,10 +14,10 @@ public class Main {
 
         try {
             if (a + b <= c || a + c <= b || b + c <= a || a <= 0 || b <= 0 || c <= 0) {
-                throw new TriangleException();
+                throw new RuntimeException("Error:TriangleException!");
             }
             System.out.println("This is a Triangle.");
-        } catch (TriangleException e) {
+        } catch (RuntimeException e) {
             System.err.println(e.getMessage());
         }
 
