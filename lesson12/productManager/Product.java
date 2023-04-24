@@ -1,13 +1,9 @@
 package lesson12.productManager;
 
-import java.util.Comparator;
-import java.util.Scanner;
-
 public class Product{
     private int id;
     private String name;
     private double price;
-    Scanner sc = new Scanner(System.in);
 
     public Product() {};
 
@@ -47,5 +43,4 @@ public class Product{
                 + ", name = " + name
                 + ", price = " + price;
     }
-
 }
